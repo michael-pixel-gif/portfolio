@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page for Semester 1 Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Sour Gummy", sans-serif;
+      }
+
+      body {
+        background-color: rgb(118, 215, 196);
+      }
+
+      header {
+        display: flex;
+        background-color: rgb(245, 183, 177);
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+      }
+
+      img {
+        width: 6em;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        padding: 1em;
+        font-size: 1.5em;
+      }
+
+      .main {
+        background-color: rgb(118, 215, 196);
+        height: calc(100vh - 171px);
+        margin: 0 auto 1em;
+        width: 70%;
+        text-align: center;
+      }
+
+      h1 {
+        padding: 4em 0 0 0;
+        font-size: 3em;
+      }
+
+      h2 {
+        font-size: 4em;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+      }
+
+      .left,
+      .middle,
+      .right {
+        text-align: center;
+        border: 0.2em solid black;
+        width: 100%;
+        margin: 3em 0;
+      }
+
+      footer {
+        background-color: rgb(245, 183, 177);
+        text-align: center;
+        font-size: 1em;
+        padding: 0.7em 0;
+      }
+
+      @media (max-width: 680px) {
+        header {
+          flex-direction: column;
+        }
+        nav a {
+          display: block;
+          padding: 0.5em;
+          text-align: center;
+        }
+        .grid-container {
+          grid-template-columns: 1fr;
+         
+        }
+
+        .grid-container div {
+          margin: .5em;
+         
+        }
+
+
+        .main {
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="m.png" alt="logo" />
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <div class="main">
+        <h1>Michael Rodriguez</h1>
+        <h2>Hello! Welcome to my Portfolio!</h2>
+
+        <div class="grid-container">
+          <div class="left">
+            <h3>Html</h3>
+            <p>5 Months of Experience</p>
+          </div>
+
+          <div class="middle">
+            <h3>CSS</h3>
+            <p>5 Months of Experience</p>
+          </div>
+
+          <div class="right">
+            <h3>Java-Script</h3>
+            <p>2 Months of Experience</p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>&copy; 2024 MR. All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
