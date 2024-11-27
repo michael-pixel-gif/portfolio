@@ -3,12 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page for my Resume</title>
+    <title>Simple Resume Layout</title>
     <style>
-        
+        *{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width:60%;
+    margin: 0 auto;
+    padding:20px;
+    box-sizing: border-box;
+    background-color: wheat;
+    box-shadow: 5px 5px 15px lightgrey;
+}
+.heading{
+    text-align: center;
+    font-weight:bold;
+}
+h1{
+    font-size: 32px;
+}
+.heading h1, p{
+    padding:10px;
+}
+hr{
+   border:1px solid black; 
+   margin: 5px;
+}
+ul{
+    padding-left:35px;
+}
+section{
+    padding: 5px;
+}
+ .skills ul{
+    list-style-type: none;
+ }
     </style>
 </head>
 <body>
-    
+    <div class="container">
+
+        <section class="heading">
+            <h1>Michael Rodriguez</h1>
+            <p>West-MEC / Highschool student</p>
+            <p>Email:m.rodriguez59313@gmail.com | Phone:(623) 341-8836 | Location: Phoenix, AZ</p>
+        </section>
+
+        <section class="Summary">
+            <h2>Summary</h2>
+            <hr>
+            <p>Highschool student that attends West-MEC, learning web development, and looking for a job to obtain real world experience.</p>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <hr>
+            <p><b>Helping with chores </b></p>
+            <ul>
+                <li>Helping my parents clean the house and wash cars.</li>
+            </ul>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <hr>
+            <p>Current highschool student</p>
+            <p>Current West-MEC student</p>
+            <p>GPA: 3.75</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <hr>
+            <ul>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Organizational</li>
+                <li>People skills</li>
+                <li>Math skills</li>
+                <li>Bilingual</li>
+            </ul>
+        </section>
+
+    </div>
 </body>
 </html>
